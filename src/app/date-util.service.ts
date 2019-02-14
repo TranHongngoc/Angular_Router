@@ -7,9 +7,12 @@ import {
   differenceInYears
 } from 'date-fns';
 
+// Khai báo class phía dưới là một service, và nó
+// được đặt trong scope của root, như thế sẽ tồn tại service này trong cả app
 @Injectable({
   providedIn: 'root'
 })
+
 export class DateUtilService {
   constructor() {}
   getDiffToNow(diff: string | number | Date): string {
